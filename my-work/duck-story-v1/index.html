@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/page1-styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>The Duck Story</title>
+  </head>
+  <body class="bonus_egg">
+    <div class="sky">
+      <div class="air"></div>
+      <div class="raindrop" id="rain_1"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_2"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_3"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_4"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_5"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_6"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_7"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_8"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_9"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_10"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_11"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_12"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_13"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_14"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_15"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_16"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_17"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_18"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_19"></div>
+      <div class="air"></div>
+      <div class="raindrop" id="rain_20"></div>
+      <div class="air"></div>
+    </div>
+    <header>
+      <p>
+        <b>Note to Parents:</b> The Duck story is meant to be read on a desktop computer or laptop. It's a great way to help kids learn how to interface with computers. Most children grow up with an ability to navigate mobile devices better than they can a mouse and keyboard. Consider making this an activity that you can do with your child!
+      </p>
+      <button>X</button>
+    </header>
+    <main class="flex-container main_container">
+      <aside class="container"></aside>
+      <article>
+        <h1>Welcome to story time</h1>
+        <button id="startButton">click to start</button>
+        <div class="phasedDisplay flex-container">
+          <p id="oneTime">Once upon a time there was a <span class="duck_type bonus_egg">duck</span>.</p>
+          <p id="whatColor">Now, what was the color of that <span class="duck_type bonus_egg">duck</span> again?</p>
+          <span class="inline">
+            <p>I think she was a </p>
+            <input id="duck_color" type="text" name="duck_color" placeholder="Type a color" maxlength="24" size="12">
+            <p> <span class="duck_type bonus_egg">duck</span>.</p>
+          </span>
+					<p id="helper">Hit "Enter" on your keyboard. 
+            <span id="mobile_helper_screen"><input id="mobile_helper_input" type="text" name="mobile_helper">Tap here to show keyboard</span>
+          </p>
+          <p id="hm">Hmmmmmm.....</p>
+          <p id="no">No, that wasn't it.</p>
+          <p id="yes"></p>
+          <div class="phaseTwo">
+            <p id="where">Now, where is that <span class="duck_type bonus_egg">duck</span>? She was just around here somewhere. </p>
+            <p id="letsSee">Let's see.......</p>
+            <pre id="eyes" class="bonus_egg">
+👀
+		  </pre>
+            <h2 id="ah">ah! </h2>
+              <p id="thereSheIs">there she is.</p>
+                <pre class="ascii_animal bonus_egg" id="duck">
+  __
+=(• )___
+ (  _> /  
+                </pre>
+              <p id="splashing">One day <span class="duck_type bonus_egg">duck</span> was splashing in the pond with her best friend.</p>
+          </div>
+          <div class="ascii_animals_block">
+          </div>
+          <div class="phaseThree">
+              <fieldset id="chooseAFriend">
+                <legend>Please Choose one friend for <span class="duck_type bonus_egg">duck</span>.</legend>
+                <input id="frogSelect" type="radio" name="friend" value="frog">
+                <label for="frogSelect">Frog</label>
+                <br>
+                <input id="dogSelect" type="radio" name="friend" value="dog">
+                <label for="dogSelect">Dog</label>
+                <br>
+                <input id="hogSelect" type="radio" name="friend" value="hog">
+                <label for="hogSelect">Hog</label>
+                <br>
+                <input id="eggnogSelect" type="radio" name="friend" value="eggnog">
+                <label for="eggnogSelect">Eggnog</label>
+                <br>
+              </fieldset>
+		<p id="tryAgain">You have to pick a friend for <span class="duck_type bonus_egg">duck</span> first!</p>
+		<p id="friend_declare"><span class="duck_type bonus_egg">duck</span>'s best friend was a <span class="friend_type"></span> named
+		   <span class="inline">
+			<input id="friend_name_input" type="text" name="friend_name" placeholder="Type a name" maxlength="23" size="11">.
+		   </span>
+		</p>
+		<fieldset class="input_name_check">
+			<legend>Does <span class="friend_name"></span> sound right?</legend>
+			<input id="name_check_yes" type="radio" name="name_check" value="yes">
+			<label for="name_check">Yes</label>
+			<br>
+			<input id="name_check_no" type="radio" name="name_check" value="no" checked>
+			<label for="name_check">No</label>
+			<br>
+		</fieldset>
+		  <p id="friend_colorQuestion">I always forget what color <span class="friend_name"></span> is. Do you remember?</p>
+		  <span id="friend_colorQuestion_input" class="inline">
+			  <p>Maybe they were a </p>
+			  <input id="friend_color" type="text" name="friend_color" placeholder="Type a color" maxlength="24" size="12">
+			  <span class="friend_type"></span>.
+		  </span>
+		  <p id="friend_goofy">"You sure are one goofy <span class="friend_type bonus_egg"></span>, <span class="friend_name bonus_egg"></span>." <span class="duck_type bonus_egg">duck</span> said as they splashed together.</p>
+		  <p id="friend_laugh"><span class="friend_name bonus_egg"></span> laughed.</p>
+		  <p id="duck_laugh"><span class="duck_type bonus_egg">Duck</span> laughed.</p>
+      <p id="rain_start">After a little while it started to <span style="color: blue;">rain</span>.</p>
+		  <p id="rain_howBad">How bad was the storm?</p>
+		  <div id="rain_input_node">
+		  	<span id="notBad">Not too bad. </span><input id="rain_range" type="range" name="rain_range" min="0" max="100" step="5" value="25"><span id="reallyBad"> Really Bad.</span>
+		  </div>
+		  <p id="rain_getOut">"We should get out of the water during a rainstorm." said <span class="friend_name bonus_egg"></span></p>
+		  <p id="rain_hungry">"Yeah. I'm hungry anyways. What should we eat today?" said <span class="duck_type bonus_egg">duck</span>.</p>
+		  <fieldset id="eat_choose">
+			<legend id="eat_what">What should they eat?</legend>  
+		  	<input id="pizzaSelect" type="radio" name="food" value="pizza">
+			  <label for="pizzaSelect">Pizza</label><br>
+		  	<input id="puddingSelect" type="radio" name="food" value="pudding">
+			  <label for="puddingSelect">Pudding</label><br>
+		  	<input id="grapesSelect" type="radio" name="food" value="grapes">
+			  <label for="grapesSelect">Grapes</label><br>
+		  </fieldset>
+		  <p id="lets_eat">"Let's eat <span id="foodSelect"></span>", said <span class="friend_name bonus_egg"></span></p>
+		  <h1 class="pudding_story">Time to slurp the pud</h1>
+		  <h1 class="grapes_story">The grape story (for brave souls)</h1>
+            <div id="waterBody">
+              <pre class="water_flow" id="water1">
+----^--^------^--^--^--^------^--^
+
+			  </pre>
+              <pre class="water_flow" id="water2">
+   --^----^--        --^----^--
+			  </pre>
+            </div>
+	  </div>
+      </article>
+      <aside class="container"></aside>
+    </main>
+    <div class="hidden_ascii">
+	   <pre class="ascii_animal bonus_egg" id="frog">
+       _   _
+      (•)_(•)
+   _ (   _   ) _
+  / \/`-----'\/ \
+__\ ( (     ) ) /__
+)   /\ \___/ /\   (
+ )_/ /|\   /|\ \_(
+	  </pre>
+          <pre class="ascii_animal bonus_egg" id="dog">
+     __
+(___()•`;
+/,    /`
+\\'--\\
+	  </pre>
+          <pre class="ascii_animal bonus_egg" id="hog">
+^..^_____  
+(00)     \9
+  \______/ 
+   WW  WW
+	  </pre>
+	  <pre class="ascii_animal bonus_egg" id="eggnog">
+ ____
+|____|      
+/___/_\      
+|   | |      
+|nog| |      
+|   | |      
+|___|_|      
+	  </pre>
+    </div>
+    <div id="print">
+      <pre>
+                                   ___
+                               ,-""   `.
+                             ,'  _   • )`-._
+                            /  ,' `-._:.===-'
+                           /  /
+                          /  ;
+              _.--.__    /   ;
+ (`._    _.-""       "--'    |
+ (_  `-""                     \
+  (`-                          :
+   (__   (__.                  ;
+     `-.   '-.__.      _.'    /
+        \      `-.__,-'    _,'
+         `._    ,    /__,-'
+            ""._\__,'| |____
+                 | |  `----.`.
+                 | |        \ `.
+                 ; |___      \-``
+                 \   --)
+                  `.`.)
+
+            Goose. (not a duck.)</pre>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/page1.js"></script>
+</html>

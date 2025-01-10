@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/troll.png">
+		<title>Meme-Generator</title>
+	</head>
+	<body>
+		<h1>Make A Meme</h1>
+		<div class="container">
+			<div class="items"></div>
+			<div class="generator container">
+				<form action="">
+					<input type="text" name="image-url" placeholder="Image URL">
+					<input type="text" name="top-text" placeholder="Top Text">
+					<input type="text" name="bottom-text" placeholder="Bottom Text">
+					<button>Create</button>
+				<span>Parts of the image that are cropped off by editing text will be regenerated when the meme is created.</span>
+				</form>
+			<canvas class="meme-canvas"></canvas>
+			</div>
+			<div class="items"></div>
+		</div>
+		<div class="container">
+			<div class="items"></div>
+			<div class="memes"></div>
+			<div class="items"></div>
+		</div>
+	</body>
+	<footer>
+		<script src="app.js"></script>
+	</footer>
+</html>

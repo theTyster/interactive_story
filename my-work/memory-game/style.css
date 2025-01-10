@@ -1,0 +1,69 @@
+* {margin: 0;} html, body{height: 100%; position:relative; background-color: #444;}
+
+#game img {
+  flex: 1;
+  border-radius: 10px;
+  margin: 5px;
+  display: inline-block;
+  filter: grayscale() contrast(0%);
+  transition: filter .5s;
+}
+
+#game img:hover{
+  filter: grayscale() contrast(0%) drop-shadow(7px 7px 10px black);
+}
+
+#game {
+  max-width: 860px;
+  display: flex;
+  flex-wrap:  wrap;
+  margin: 0 auto;
+}
+
+h1, sub {
+  text-align: center;
+  display: block;
+  color: white;
+}
+a {
+  color: teal;
+}
+
+svg {
+  animation: rotate 2s linear infinite;
+}
+
+path {
+  transition: fill 1s;
+}
+
+@keyframes rotate{
+  from {
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+div.confetti {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 860px;
+  display: none;
+  flex-wrap: wrap;
+  animation: fall 10s linear;
+}
+
+@keyframes fall{
+  0%{
+    top: 0%
+  }
+  100%{
+    top: 200%
+  }
+}

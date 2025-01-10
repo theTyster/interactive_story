@@ -1,0 +1,130 @@
+body {
+  background: conic-gradient(at 50% 120%, #98e698, 30deg, #d0aaf3, 120deg, #ffb1a3, 330deg, #98e698);
+  min-height: 100vh;
+  position: relative;
+}
+
+.vcontainer{
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.vflex-items {
+  flex: 1;
+}
+
+div.vflex-items:nth-child(1){
+  flex-grow: 0;
+  flex-basis: 50px;
+}
+
+.container, search-container{
+  display: flex;
+}
+.flex-items{
+  flex: 1;
+}
+
+img.strawberry-img {
+  height:400px;
+}
+.watermelon-img, .orange-img {
+  height: 200px;
+  transition: filter .1s, opacity 1s;
+}
+
+.watermelon-sub-container:hover, .orange-sub-container:hover{
+  filter: drop-shadow(2px 2px 5px black);
+}
+.watermelon-sub-container:active, .orange-sub-container:active{
+  filter: none;
+}
+
+.fruit-sub-container{
+  opacity:0;
+}
+
+.watermelon-link-text, .orange-link-text {
+  text-align: center;
+  font-weight: bold;
+  color: #0f170f;
+  filter: drop-shadow(0px 0px 1px #0f170f);
+  padding: 7px;
+  max-width:100px;
+  margin-top: -8.6em;
+  margin-left: 3.5em;
+  cursor: default;
+  user-select: none;
+}
+.watermelon-link-text{
+  filter: drop-shadow(0px 0px 10px #0f170f);
+  max-width:109px;
+  color: white;
+  margin-top: -8em;
+}
+
+input {
+  text-align:center;
+  padding: 7px;
+  border-radius: 7px;
+  border: 2px solid tomato;
+  transition: all 1s;
+  position: relative;
+  min-width: 0;
+  top: 40px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container .suggestions ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+.suggestion {
+  margin: 7px 0;
+  padding: 7px 0;
+  border-radius: 7px;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  background: tomato;
+  color: white;
+}
+
+.suggestion:hover{
+  background:#993b2a;
+}
+
+@media only screen and (max-width:600px){
+  body {
+    background: conic-gradient(at 50% 150%, #98e698, 20deg, #d0aaf3, 120deg, #ffb1a3, 350deg, #98e698);
+  }
+  img.strawberry-img {
+    height:300px;
+  }
+  .watermelon-img, .orange-img {
+    height: 150px;
+  }
+  .watermelon-link-text, .orange-link-text {
+    margin-top: -7em;
+    margin-left: 1.7em;
+  }
+  .watermelon-link-text{
+    margin-top: -6.3em;
+  }
+}
+
+.noscript {
+  position: relative;
+  top: -50%;
+  padding: 50px;
+  text-align: center;
+  background: darkred;
+  color:white;
+}

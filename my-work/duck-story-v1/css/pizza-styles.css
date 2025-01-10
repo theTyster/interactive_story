@@ -1,0 +1,4 @@
+@media (max-width: 810px){
+  button#print_this {
+		display: none;
+	}

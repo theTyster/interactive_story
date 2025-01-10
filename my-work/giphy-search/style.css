@@ -1,0 +1,74 @@
+body {
+  background: #111;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 50px;
+}
+
+.error {
+  color: red;
+  font-size: 16pt;
+}
+
+.container {
+  display: flex;
+}
+
+.flex-items {
+  flex: 1;
+}
+
+button,
+input {
+  margin: 0 1em;
+  margin-left: 1em;
+  margin-right: 0;
+  padding: 1em;
+}
+
+input {
+  margin: auto 0;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  background-color: darkred;
+  color: white;
+}
+
+button:hover {
+  filter: drop-shadow(0 0 3px black);
+}
+button:active {
+  filter: none;
+}
+
+.request-gif {
+  background-color: black;
+}
+
+.gifs {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+
+.gif {
+  border: 3px solid #666;
+}
+
+@media screen and (max-width: 465px) {
+  input,
+  button {
+    display: block;
+    margin: 1em auto;
+  }
+
+  button {
+    width: 10em;
+  }
+}

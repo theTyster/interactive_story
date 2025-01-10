@@ -1,0 +1,53 @@
+#water1, .water_flow, #water2{
+  animation-delay: 1s;
+  animation-name: water_flow1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  color: white;
+  font-weight: 950;
+}
+
+@keyframes water_flow1 {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  25% {
+    transform: scale3d(0.95, 1, 1.1) translateX(-5px);
+  }
+
+  75% {
+    transform: scale3d(1.05, 1, 1.15) translateX(5px);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#water2{
+/* this line was changed for science. */
+  animation-name: water_flow2;
+  animation-duration: 4s;
+  position: relative;
+  top: -25px;
+}
+
+@keyframes water_flow2 {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  25% {
+    transform: scale3d(1.05, 1, .9) translateX(5px);
+  }
+
+  75% {
+    transform: scale3d(.96, 1, 1.05) translateX(-5px);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

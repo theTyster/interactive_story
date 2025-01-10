@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fruit Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/strawberry.svg">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="vcontainer">
+		<div class="vflex-items"></div>
+		<main class="container">
+			<div class="flex-items"></div>
+			<article class="flex-items">
+				<div class="strawberry-container container">
+					<div class="flex-items"></div>
+					<img class="strawberry-img flex-items" src="assets/strawberry.svg" alt="strawberry">
+					<div class="flex-items"></div>
+				</div>
+				<div class="fruit-container container">
+					<div class="flex-items"></div>
+						<div class="watermelon-sub-container fruit-sub-container">
+							<img class="watermelon-img flex-items" src="assets/watermelon.svg" alt="watermelon">
+								<p class="watermelon-link-text flex-items">
+									Search Wikipedia
+								</p>
+						</div>
+						<div class="orange-sub-container fruit-sub-container">
+							<img class="orange-img flex-items" src="assets/orange.svg" alt="orange">
+								<p class="orange-link-text flex-items">
+									Search Open Food Facts
+								</p>
+						</div>
+					<div class="flex-items"></div>
+				</div>
+				<div class="search-container">
+					<input class="fruit-search flex-items"type="text" name="fruit" id="fruit" placeholder="Search fruit 🍎">
+					<div class="suggestions flex-items">
+						<ul></ul>
+					</div>
+				</div>
+				<noscript>
+					<p class="noscript">
+						This page requires Javascript to work!
+					</p>
+				</noscript>
+			</article>
+			<div class="flex-items"></div>
+		</main>
+		<div class="vflex-items"></div>
+	</div>
+<script src="./fruit.js"></script>
+<script  src="./script.js"></script>
+</body>
+</html>

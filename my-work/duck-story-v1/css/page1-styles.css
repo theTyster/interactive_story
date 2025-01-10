@@ -1,0 +1,22 @@
+@import "animate_water_flow.css";
+@import "animate_rain.css";
+
+#waterBody{
+	background-color: darkblue;
+	border-radius: 100%;
+	padding-top:30px;
+	width:320px;
+	box-shadow: darkblue 0 0 50px;
+	margin: 20px;
+	padding-left: 17%;
+}
+
+.sky {
+	height: 0;
+}
+
+@media (max-width: 499px){
+	#waterBody{
+		padding-left: 3%;
+	}
+}
